@@ -1,0 +1,256 @@
+header {
+    padding-bottom: 50px;
+}
+
+#logo {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+h1 {
+    font-family: 'Raleway', "Palatino Linotype", sans-serif;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Raleway', "Palatino Linotype", sans-serif;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: 'Raleway', "Palatino Linotype", sans-serif;
+    font-size: 20px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+p {
+    text-align: justify;
+}
+
+#main,
+#donation,
+#abo,
+#single {
+    margin: 0;
+    padding-top: 0px;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 2%;
+    width: 54%;
+}
+
+#info {
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 2%;
+    width: 54%;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navLeft {
+    margin-top: 20px;
+    padding: 3% 2%;
+    width: 10%;
+    font-size: 15px;
+    flex: 0 0 10%;
+}
+
+.subNav {
+    margin-top: 20px;
+    padding: 3% 2%;
+    width: 10%;
+    display: none;
+    position: absolute;
+    top: 367px;
+    left: 180px;
+    flex: 0 0 10%;
+}
+
+#btnShop:hover .subNav {
+    display: inline-block;
+}
+
+.buttonNav:link,
+.buttonNav:visited {
+    background-color: #237357;
+    color: white;
+    width: 75px;
+    padding: 10px 35px;
+    margin: 1px 0px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttonNav:hover,
+.buttonNav:active {
+    background-color: #38A57F;
+    position:relative;
+}
+
+.buttonSubnav:link,
+.buttonSubnav:visited {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    width: 75px;
+    padding: 8px 35px;
+    margin: 1px 0px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttonSubnav:hover,
+.buttonSubnav:active {
+    background-color: whitesmoke;
+}
+
+#release {
+    margin-top: 127px;
+    padding-top: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 18%;
+}
+
+.asideRight {
+    margin-top: 87px;
+    padding-top: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    width: 18%;
+}
+
+.recommendation {
+    margin-top: 12px;
+    padding-top: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    width: 18%;
+}
+
+#order {
+    background-color: #F9F9FA;
+}
+
+legend {
+    font-family: helvetica;
+    line-height: 2;
+}
+
+input[type=radio].textform {
+    font-family: helvetica;
+    font-size: 15px;
+}
+
+.textform {
+    font-size: 13px;
+}
+
+.textarea {
+    resize: none;
+}
+
+#cover_95 {
+    float: left;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 0px;
+    width: 45%;
+}
+
+#spotify {
+    margin-top: 20%;
+    width: 250px;
+    height: 380px;
+}
+
+#vola,
+#dowdelin,
+.book,
+.movie {
+    width: 100%;
+}
+
+#team,
+#imgDonation {
+    float: left;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.clear {
+    clear: both
+}
+
+li {
+    list-style: none;
+}
+
+.amount {
+    align-items: flex-end;
+}
+
+fieldset {
+    width: 90%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid #237357;
+}
+
+label {
+    min-width: 8em;
+    display: inline-block;
+    text-align: left;
+    margin: 2px;
+}
+
+input [type="radio"] {
+    width: auto;
+    margin: 2px;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    padding-top: 2%;
+    background-color: grey;
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.linkFooter:link,
+.linkFooter:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.linkFooter:hover,
+.linkFooter:active {
+    color: #232323;
+}
+

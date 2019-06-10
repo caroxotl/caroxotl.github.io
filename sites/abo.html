@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <title>Matices - Zeitschrift zu Lateinamerika, Spanien und Portugal</title>
+    <link rel="stylesheet" type="text/css" href="../matices.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100" rel="stylesheet">
+    <script type="text/javascript" src="../shop_script.js"></script>
+    <link rel="icon" sizes="16x16" href="../pics/favicon.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body>
+
+
+    <header>
+
+        <figure>
+            <img id="logo" src="../pics/logo_matices.png" alt="Matices Logo">
+        </figure>
+
+    </header>
+
+
+    <div class="flex-container">
+
+        <div>
+            <nav class="navLeft">
+                <ul>
+                    <li><a class="buttonNav decorationNone" href="matices.html">Home</a></li>
+
+                    <li id="btnShop" class="btnShop"><a class="buttonNav decorationNone" href="shop.html">Bestellen</a>
+
+                        <ul id="subNav" class="subNav">
+                            <li><a class="buttonSubnav decorationNone" href="abo.html">Abo</a></li>
+                            <li><a class="buttonSubnav decorationNone" href="single.html">Einzelhefte</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a class="buttonNav decorationNone" href="info.html">Info</a></li>
+                    <li><a class="buttonNav decorationNone" href="donation.html">Spenden</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <section id="abo">
+            <h1>Abos</h1>
+            <form name="myForm" id="myForm" action="/action_page.php">
+                <p>Möchtest du keine Ausgabe mehr verpassen? Dann bestell dir jetzt ein Abo, und die Zeitschrift wird dir vier mal im Jahr nach Hause geliefert.</p>
+
+
+                <fieldset>
+                    <legend>Bestellformular</legend>
+                    <fieldset>
+                        <p>Bist du Student oder Schüler? Dann profitiere von unseren Studentenpreisen. Falls du uns gerne mit einer kleinen Spendepro Ausgabe unterstützen möchtest, dann bestell dir das Förderabo. </p>
+
+                        <div class="textform">
+
+                            <input type="radio" id="Studentenabo" class="textform" name="abo" value="20" onclick="aboRadio()"> <span id="aboSt"></span>Studentenabo<br>
+
+                            <input type="radio" id="Privatabo" class="textform" name="abo" value="24" onclick="aboRadio()"> <span id="aboPr"></span>Privatabo <br>
+
+                            <input type="radio" id="Förderabo" class="textform" name="abo" value="30" onclick="aboRadio()"> <span id="costFo"></span>Förderabo<br>
+
+                        </div>
+
+                        <p id="aboCost"></p>
+                        <p id="abo"></p>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Persönliche Daten</legend>
+
+                        <label for="title" class="textform">Ansprache:</label><br>
+                        <select name="title">
+                            <option value=""></option>
+                            <option value="mrs">Frau</option>
+                            <option value="mr">Herr</option>
+                            <option value="dr">Dr.</option>
+                        </select><br>
+                        <label for="firstname" class="textform">Vorname:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Dein Vorname" required><br>
+
+                        <label for="lastname" class="textform">Nachname:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Dein Nachname" required><br>
+
+                        <label for="street" class="textform">Straße:</label>
+                        <input type="text" name="street" id="street" placeholder="Deine Straße" required><br>
+
+                        <label for="housenumber" class="textform">Hausnummer:</label>
+                        <input type="text" name="housenumber" id="housenumber" placeholder="Deine Hausnummer" required><br>
+
+                        <label for="postcode" class="textform">PLZ:</label>
+                        <input type="text" name="postcode" id="postcode" placeholder="Deine PLZ" required><br>
+
+                        <label for="place" class="textform">Ort:</label>
+                        <input type="text" name="place" id="place" placeholder="Dein Ort" required><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Hinweise:</legend>
+                        <textarea class="textarea" name="message" rows="5" cols="50"></textarea>
+                    </fieldset>
+
+                </fieldset>
+            </form>
+
+            <input type="reset" onclick="reset()" value="Zurücksetzen">
+            <input type="submit" onclick="aboOrder()" value="Abo Bestellen">
+
+        </section>
+
+        <aside class="recommendation">
+
+            <h2>Buchempfehlung</h2>
+
+            <h3>Die Schachspieler von Buenos Aires</h3>
+
+            <p>ein Roman von Ariel Magnus</p>
+
+            <img src="../pics/die_schachspieler_von_buenos_aires.jpg" id="book1" class="book" alt="Buchcover 'Schachspieler von Buenos Aires'">
+
+            <details>
+                <summary>Informationen zum Buch</summary>
+                <dl>
+                    <dt>Gebundene Ausgabe</dt>
+                    <dd>336 Seiten</dd>
+                    <dt>Verlag</dt>
+                    <dd>Kiepenheuer und Witsch</dd>
+                    <dt>Sprache</dt>
+                    <dd>Deutsch</dd>
+                    <dt>ISBN</dt>
+                    <dd>978-3-462-05005-9</dd>
+                    <dt>Originaltitel</dt>
+                    <dd>El Salvaje</dd>
+                </dl>
+            </details>
+
+            <p>"Ein Schach-Roman, der historische Fakten und reale Persönlichkeiten mit literarischen Elementen und Figuren mischt und Zug um Zug eine ganz besondere Zeit in einer besonderen Stadt zum Leben erweckt."</p>
+
+        </aside>
+    </div>
+
+    <footer class="clear">
+        <ul>
+            <li><a class="linkFooter" href="#">Rechtliches</a></li>
+            <li><a class="linkFooter" href="#">Impressum</a></li>
+            <li><a class="linkFooter" href="#">AGB</a></li>
+            <li><a class="linkFooter" href="#">Datenschutz</a></li>
+            <li><a class="linkFooter" href="info.html">Über uns</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
