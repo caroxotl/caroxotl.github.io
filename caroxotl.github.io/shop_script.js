@@ -1,3 +1,9 @@
+/* Diese Funktion (begruessung) reagiert mit onload in jedem Browser anders. Mal wird die Seite vorher geladen, mal nur teilweise oder gar nicht bevor das Pop-Up-Fenster erscheint. Von daher habe ich den Weg gewählt das Script im HTML zu verwenden, da es dann in allen Browsern gleich angewendet wird: Erst erscheint das Pop-up, dann wird die Seite geladen.
+
+function begruessung() {
+        alert("Hallo " + prompt("Wie heißt du?") + "! Die Matice-Redaktion wünscht dir viel Spaß beim durchstöbern der Seite.");
+} */
+
 function aboRadio() {
     for (var i = 0; i < document.myForm.length; i++) {
         if (document.myForm.elements[i].checked == true) {
